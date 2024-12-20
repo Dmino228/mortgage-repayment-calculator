@@ -31,15 +31,17 @@ Users should be able to:
 ### Screenshot
 
 Desktop
+
 ![](./desktop.png)
 
 Mobile
+
 ![](./mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mortgage-repayment-calculator-tcshaavP4K](https://www.frontendmentor.io/solutions/mortgage-repayment-calculator-tcshaavP4K)
+- Live Site URL: [https://mortgage-repayment-calculator-smoky.vercel.app](https://mortgage-repayment-calculator-smoky.vercel.app)
 
 ## My process
 
