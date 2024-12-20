@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Mortgage repayment calculator solution
 
-## Getting Started
+This is a solution to the [Mortgage repayment calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Input mortgage information and see monthly repayment and total repayment amounts after submitting the form
+- See form validation messages if any field is incomplete
+- Complete the form only using their keyboard
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+Desktop
+![](./desktop.png)
+
+Mobile
+![](./moblie.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- TypeScript
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com) - CSS Library
+
+### What I learned
+
+This project had teached me how to use style parent and sibling elements of an input using **_peer_**, and **_has_** in tailwind css.
+
+```html
+<label
+  className="relative flex items-center w-full h-12 border border-darkCol rounded-lg gap-5 px-5 py-2 cursor-pointer hover:border-lightCol has-[:checked]:border-lightCol has-[:checked]:bg-veryLightCol"
+  htmlFor="repayment"
+>
+  <input
+    className="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-lightCol transition-all"
+    type="radio"
+    name="mortgageType"
+    id="repayment"
+    value="repayment"
+    onChange="{handleChange}"
+  />
+  <span
+    className="absolute bg-lightCol w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-[30px] transform -translate-x-1/2 -translate-y-1/2"
+  ></span>
+  <p className="font-extrabold text-darkCol text-lg">Repayment</p>
+</label>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Useful resources
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
+- Frontend Mentor - [@Dmino228](https://www.frontendmentor.io/profile/Dmino228)
+- Twitter - [@Dmino228](https://x.com/Dmino228)
+- Discord - [@Dmino](https://discord.com/users/450691197522935818)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments

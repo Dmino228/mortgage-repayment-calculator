@@ -10,7 +10,11 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightCol: "var(--light-col)",
+        veryLightCol: "var(--very-light-col)",
+        veryLightCol2: "var(--very-light-col2)",
+        darkCol: "var(--dark-col)",
+        veryDarkCol: "var(--very-dark-col)",
       },
     },
   },
