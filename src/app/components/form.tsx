@@ -53,7 +53,8 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
 }
 
 function calcResults(formData: FormContent) {
-  let { mortgageAmount, mortgageTerm, interestRate, mortgageType } = formData;
+  const { mortgageAmount, mortgageType } = formData;
+  let { mortgageTerm, interestRate } = formData;
   interestRate /= 1200;
   mortgageTerm *= 12;
 

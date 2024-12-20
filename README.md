@@ -34,7 +34,7 @@ Desktop
 ![](./desktop.png)
 
 Mobile
-![](./moblie.png)
+![](./mobile.png)
 
 ### Links
 
